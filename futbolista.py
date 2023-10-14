@@ -8,7 +8,7 @@ class Futbolista(Persona,Deportista):
         self._golesMarcados = golesMarcados
         self._tarjetasRojas = tarjetasRojas
         self._piernaHabil = piernaHabil
-        Futbolista._listaFutbolista += 1
+        Futbolista._listaFutbolista.append(self)
 
     def getGolesMarcados(self):
       return self._golesMarcados
